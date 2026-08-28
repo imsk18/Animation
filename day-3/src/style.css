@@ -10,19 +10,45 @@ height: 100%;
 #home{
     height: 100vh;
     width: 100%;
-      background-color: #c6c2c2;
-      background-image: url("https://i.pinimg.com/736x/86/63/c4/8663c464c6c9545b971d73925f76fa49.jpg");
-      object-fit: cover;
-       background-repeat: no-repeat;   /* Prevents repeating */
-  background-size: cover;         /* Covers the entire element */
-  background-position: center;    /* Centers the image */
-  /* background-attachment: fixed;  */
-
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+      /* background-color: #c6c2c2; */
+      display: flex;
+      align-items: center;
+      justify-content: center;
 }
+.loading{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    z-index: 200;
+  
+}  
+.loaderCounter{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.loaderCounter h1{
+    font-size: 3rem;
+}
+.background{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
+.background img{
+    height: 100%;
+    width: 100%;
+     object-fit: cover;
+     /* Prevents repeating */
+  background-size: cover;         /* Covers the entire element */
+  background-position: center;
+
+}
+
 
 #main{
     height: 100vh;
@@ -41,16 +67,27 @@ height: 100%;
     background-color: #c84141;
 }
 
-.heading{
+.heading {
     width: 100%;
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     overflow: hidden;
-}
+    padding-bottom: 2rem;
+    
+} 
+
 h1{
     font-size: 7rem;
     color:whitesmoke;
+    overflow: hidden;
+}
+.heading h2{
+    font-size: 1.5rem;
+    color: whitesmoke;
+   
 }
 span{
     display: inline-block;
