@@ -1,0 +1,59 @@
+.moving-section {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #080808;
+}
+
+.marquee {
+  position: absolute;
+  display: flex;
+  white-space: nowrap;
+
+  font-size: 140px;
+  font-weight: 900;
+
+  color: transparent;
+  -webkit-text-stroke: 1px #333;
+
+  width: max-content;
+}
+
+.marquee span {
+  padding-right: 50px;
+}
+
+.main-text {
+  position: relative;
+  z-index: 2;
+
+  max-width: 900px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  font-size: clamp(40px, 7vw, 100px);
+  font-weight: 900;
+
+  line-height: 0.9;
+
+  perspective: 1000px;
+}
+
+.main-text span {
+  display: inline-block;
+}
+
+.main-text span:hover {
+  color: #ff3b3b;
+}
+
+.space {
+  width: 20px;
+}
